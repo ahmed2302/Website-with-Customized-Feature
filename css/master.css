@@ -278,7 +278,7 @@ html {
   height: 100vh;
   color: #fff;
   position: relative;
-  background-image: url(/imgs/1.jpg);
+  background-image: url(../imgs/1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -292,7 +292,6 @@ html {
   height: 100%;
   z-index: 1;
 }
-
 
 header .container {
   z-index: 3;

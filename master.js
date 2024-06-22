@@ -46,12 +46,25 @@ let landing = document.querySelector(".landing");
 
 let bgOptions = true;
 let bgInterval;
+let imageArray = [
+  "1.jpg",
+  "2.jpg",
+  "3.jpg",
+  "4.jpg",
+  "5.jpg",
+  "6.jpg",
+  "7.jpg",
+  "8.jpg",
+  "9.jpg",
+  "10.jpg",
+];
 function interval() {
   if (bgOptions == true) {
     bgInterval = setInterval(() => {
       let i = Math.ceil(Math.random() * 10);
-      landing.style.backgroundImage = 'url("./imgs/' + i + '.jpg")';
-      localStorage.setItem("bgImage", 'url("./imgs/' + i + '.jpg")');
+      // landing.style.backgroundImage = 'url("./imgs/' + i + '.jpg")';
+      landing.style.backgroundImage = `url("./imgs/${imageArray[i]}")`;
+      localStorage.setItem("bgImage", `url("./imgs/${imageArray[i]}")`);
     }, 5000);
   }
 }
