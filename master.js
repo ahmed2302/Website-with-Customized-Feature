@@ -50,8 +50,8 @@ function interval() {
   if (bgOptions == true) {
     bgInterval = setInterval(() => {
       let i = Math.ceil(Math.random() * 10);
-      landing.style.backgroundImage = 'url("/imgs/' + i + '.jpg")';
-      localStorage.setItem("bgImage", 'url("/imgs/' + i + '.jpg")');
+      landing.style.backgroundImage = 'url("./imgs/' + i + '.jpg")';
+      localStorage.setItem("bgImage", 'url("./imgs/' + i + '.jpg")');
     }, 5000);
   }
 }
